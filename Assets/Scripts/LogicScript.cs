@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,12 +10,17 @@ public class LogicScript : MonoBehaviour
     [SerializeField] TextMeshProUGUI _ScoreText;
     [SerializeField] TextMeshProUGUI _GameOverScoreText;
 
-    [SerializeField] GameObject _GameOverPannel;
-    [SerializeField] GameObject _MenuPannel;
+    [SerializeField] private GameObject _GameOverPannel;
+    [SerializeField] private GameObject _MenuPannel;
+    [SerializeField] private AudioClip _backgroundMusic;
+    [SerializeField] private AudioSource _audioSource;
 
     private void Start()
     {
         Time.timeScale = 0;
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.clip = _backgroundMusic;
+        _audioSource.loop = true;
     }
 
     public void addScore(int scoreToAdd)
@@ -34,12 +38,15 @@ public class LogicScript : MonoBehaviour
     {
         _GameOverPannel.SetActive(true);
         DisplayGameOverScore();
+        _audioSource.Pause();
     }
 
     public void StartGame()
     {
         Time.timeScale = 1;
         _MenuPannel.SetActive(false);
+        _audioSource.Play();
+
     }
 
     private void DisplayGameOverScore()
