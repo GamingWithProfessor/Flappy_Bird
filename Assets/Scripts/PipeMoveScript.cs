@@ -11,13 +11,7 @@ public class PipeMoveScript : MonoBehaviour
 
     private void Start()
     {
-        _BirdScript = GameObject.FindGameObjectWithTag("Bird").GetComponent<BirdScript>();
-
-        if (_BirdScript == null)
-        {
-            Debug.LogError("BirdScript reference is not assigned in the Inspector.");
-        }
-        
+        _BirdScript = GameObject.FindGameObjectWithTag("Bird").GetComponent<BirdScript>();        
     }
 
     void Update()

@@ -10,19 +10,6 @@ public class PipeSpawnScript : MonoBehaviour
     [SerializeField] float _HeightOffset = 1;
     [SerializeField] BirdScript _BirdScript;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Check if _BirdScript is assigned
-        if (_BirdScript == null)
-        {
-            Debug.LogError("BirdScript reference is not assigned in the Inspector.");
-        }
-
-        //SpawnPipe();
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (_Timer < _SpawnRate)
