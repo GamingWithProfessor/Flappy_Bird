@@ -11,6 +11,12 @@ public class LogicScript : MonoBehaviour
     [SerializeField] TextMeshProUGUI _ScoreText;
 
     [SerializeField] GameObject _GameOverPannel;
+    [SerializeField] GameObject _MenuPannel;
+
+    private void Start()
+    {
+        Time.timeScale = 0;
+    }
 
     public void addScore(int scoreToAdd)
     {
@@ -26,5 +32,11 @@ public class LogicScript : MonoBehaviour
     public void GameOver()
     {
         _GameOverPannel.SetActive(true);
+    }
+
+    public void StartGame()
+    {
+        Time.timeScale = 1;
+        _MenuPannel.SetActive(false);
     }
 }

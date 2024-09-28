@@ -7,7 +7,7 @@ public class BirdScript : MonoBehaviour
     [SerializeField] private Rigidbody2D _Rigidbody;
     [SerializeField] private float _FlapStrength;
 
-    public LogicScript _LogicScript;
+    [SerializeField] private LogicScript _LogicScript;
     public bool _BirdIsAlive = true;
 
 
