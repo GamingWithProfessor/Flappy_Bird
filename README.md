@@ -15,6 +15,6 @@ This project is a clone of the popular mobile game Flappy Bird, where players na
 - Responsive design for various screen sizes
 
 ## How to Play
-- Press the space bar (or tap the screen) to flap the bird.
+- Press the space bar to flap the bird.
 - Avoid hitting the pipes and the ground.
 - Try to get the highest score by passing through as many pipes as possible!
