@@ -1,6 +1,6 @@
 # Flappy Bird
 
-![Flappy Bird](WebGL Builds/flappy-bird.gif)
+![Flappy Bird](WebGL Builds/Flappy_Bird.gif)
 
 ## Overview
 
