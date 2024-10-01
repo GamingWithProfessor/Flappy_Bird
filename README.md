@@ -1,5 +1,7 @@
 # Flappy Bird
 
+![Flappy Bird](link-to-your-image)
+
 ## Overview
 
 This project is a clone of the popular mobile game Flappy Bird, where players navigate a bird through a series of pipes by tapping the screen to flap its wings. The objective is to achieve the highest score possible without crashing into the pipes.
@@ -11,3 +13,8 @@ This project is a clone of the popular mobile game Flappy Bird, where players na
 - Colorful graphics and engaging animations
 - Sound effects to enhance gameplay
 - Responsive design for various screen sizes
+
+## How to Play
+- Press the space bar (or tap the screen) to flap the bird.
+- Avoid hitting the pipes and the ground.
+- Try to get the highest score by passing through as many pipes as possible!
