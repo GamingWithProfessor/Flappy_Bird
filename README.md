@@ -2,6 +2,10 @@
 
 ![Flappy Bird](WebGL%20Builds/Flappy_Bird.gif)
 
+## Play the Game
+
+Try out the game [here](https://manojkumarbitla.itch.io/flappy-bird)!
+
 ## Overview
 
 This project is a clone of the popular mobile game Flappy Bird, where players navigate a bird through a series of pipes by tapping the screen to flap its wings. The objective is to achieve the highest score possible without crashing into the pipes.
